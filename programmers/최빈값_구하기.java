@@ -1,9 +1,11 @@
 package programmers;
 
+import java.util.Arrays;
+
 public class 최빈값_구하기 {
     import java.util.Arrays;
     class Solution {
-        public int solution(int[] array) {
+        public int solution(int[] array) {//테스트
             int answer = array[0];
             int count1 = 1;
             int count2 = 0;
