@@ -1,0 +1,26 @@
+package programmers;
+
+import java.util.Arrays;
+
+public class 배열_뒤집기 {
+    public static void main(String[] args) {
+
+        int[] numbers1 = {1, 2, 3, 4, 5};
+        int[] numbers2 = {1, 1, 1, 1, 1, 2};
+        int[] numbers3 = {1, 0, 1, 1, 1, 3, 5};
+        System.out.println(Arrays.toString(solution(numbers1)));
+        System.out.println(Arrays.toString(solution(numbers2)));
+        System.out.println(Arrays.toString(solution(numbers3)));
+
+
+    }
+    public static int[] solution(int[] num_list) {
+        int[] answer = new int[num_list.length];
+        for(int i=0; i<num_list.length; i++){
+            answer[i] = num_list[num_list.length-i-1];
+        }
+        return answer;
+    }
+
+
+}
