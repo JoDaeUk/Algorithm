@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class  {
+public class  firstReverse{
     public static void main(String[] args) {
         String output = firstReverse("codestates");
         System.out.println(output); // "setatsedoc"
