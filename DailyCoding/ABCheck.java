@@ -15,6 +15,7 @@ public class ABCheck {
             }
             if(arr[i].equals("B")){
                 if(arr[i+4].equals("A") ) return true;
+                //ABCheck
             }
         }
         return false;
