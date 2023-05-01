@@ -14,7 +14,7 @@ public class robotPath {
         int[] src = new int[]{4, 2};
         int[] dst = new int[]{2, 2};
         int output = robotPath(room, src, dst);
-        System.out.println(output); // --> 8
+        System.out.println(output);
     }
 
     public static int robotPath(int[][] room, int[] src, int[] dst) {
@@ -36,11 +36,6 @@ public class robotPath {
                 // 장애물(1)이거나 이미 최소 시간(1)으로 통과가 가능한 경우
                 return room;
             }
-
-            // dfs로 4가지 방향에 대해 탐색을 한다.
-            // 완전탐색을 해야하므로 bfs나 dfs가 큰 차이가 없다.
-            // bfs의 경우 목적지에 도착하는 경우 탐색을 중단해도 되므로,
-            // 약간 더 효율적이다.
             aux(M, N, new int[]{row + 1, col}, step + 1, room); // 상
             aux(M, N, new int[]{row - 1, col}, step + 1, room); // 하
             aux(M, N, new int[]{row, col - 1}, step + 1, room); // 좌
